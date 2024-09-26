@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: fufu_republic
+    schema: fufu_republic
+    tables:
+      - name: branch
+      - name: customer
+      - name: inventory
+      - name: item
+      - name: order_header
+      - name: order_items
+      - name: payment_method
+      - name: promotion
+      
