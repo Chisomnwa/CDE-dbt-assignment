@@ -1,0 +1,6 @@
+Payment_method_id,Name,Provider
+1,Cash,N/A
+2,Debit Card,Nomba POS
+3,Online Payment,Nomba Web Checkout
+4,Online Payment,Paystack
+5,Online Payment,Interswitch
