@@ -56,13 +56,13 @@ The reviews helped to to understand better how the tables better connect to form
 
 With the insights from the data modeling process, we go ahead to create the three layers (datasets) in Bigquery using **dbt** as a data transformation tool.
 
-These (*8staging**, **warehouse**, and **analytics_obt** or **reporting**) layers are identified by the **"dbt prefix"**.
+These (**staging**, **warehouse**, and **analytics_obt** or **reporting**) layers are identified by the **"dbt prefix"**.
 
 <img src="BigQuery Data Layers Image.png">
 
 The above three data layers help to achieve the business requirements of Fufu Republic.
 
-The business can now leverage data to:
+### The business can now leverage data to:
 
 ● Understand sales trends across locations, payment methods, and dining options
 (dine-in, take-out, online).
