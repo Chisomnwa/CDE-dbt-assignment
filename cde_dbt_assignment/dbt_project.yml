@@ -33,5 +33,16 @@ models:
   cde_dbt_assignment:
     # Config indicated by + and applies to all files under models/example/
     staging:
+      +enabled: true
       +materialized: table
       schema: stg_fufu_republic
+    warehouse:
+      +enabled: true
+      +materialized: table
+      schema: dwh_fufu_republic
+      dim_date: 
+        +materialized: view
+    analytics_obt:
+      +enabled: true
+      +materialized: table
+      +schema: obt_fufu_republic
