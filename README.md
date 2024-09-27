@@ -45,12 +45,32 @@ After a couple of meeting with the business stakeholders, we reviwed the entire 
 The reviews helped to to understand better how the tables better connect to form a dimensional model.
 
 ### New Conceptual Model
-phy
+<p align="center" style="margin-bottom: 0px !important;">
+<img src="Conceptual and Physical Data models/Conceptual Data Model.png" width="540" height="540">
 
 ### New Physical Model
+<p align="center" style="margin-bottom: 0px !important;">
+<img src="Conceptual and Physical Data models/Physical Data Model.png" width="540" height="540">
 
-With the insights from the data modeling and the data warehouse architecture design, we go ahead to create the three layers (datasets) in Bigquery using **dbt**. These (staging, warehouse, and analytics_obt or reporting) layers are identified by the **"dbt prefix"**.
+---
 
+With the insights from the data modeling process, we go ahead to create the three layers (datasets) in Bigquery using **dbt** as a data transformation tool.
+
+These (*8staging**, **warehouse**, and **analytics_obt** or **reporting**) layers are identified by the **"dbt prefix"**.
+
+<img src="BigQuery Data Layers Image.png">
+
+The above three data layers help to achieve the business requirements of Fufu Republic.
+
+The business can now leverage data to:
+
+● Understand sales trends across locations, payment methods, and dining options
+(dine-in, take-out, online).
+
+● Manage stock levels efficiently, reducing waste and ensuring availability.
+
+● Enhance customer experience by analyzing purchasing habits and tailoring promotions
+accordingly.
 
 
 
