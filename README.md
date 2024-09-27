@@ -1,52 +1,60 @@
-
 # CDE-dbt-assignment
 
-This dbt assignment is a continuation of the previous data modelling assignment.
+This dbt assignment is a continuation of the previous [data modelling assignment](https://github.com/Chisomnwa/CDE_Data-Modeling-Assignment), with the case study: **Fufu Republic.**
 
-In this phase, you have been tasked to design and implement a dimensional model that was previously designed. After several discussions, the team has decided to use **dbt** for the transformation layer.
+## The Assignment Instructions is as Follows:
 
-Step 1: Develop a Dimensional Model (This has been done)
+In this phase, you have been tasked to design and implement a dimensional model that was previously designed. 
 
-Step 2: Prototype Using Seed Data. Since real data is not yet available, you are asked to generate synthetic data. You can use Python’s **Faker library** or a GenAI tool to generate this data. The generated data will serve as
-seeds for your dbt project.
+After several discussions, the team has decided to use **dbt** for the transformation layer.
 
-Step 3: Implement dbt Models
-● Sources: Create source models for the raw data tables, ensuring you define freshness
+**Step 1**: Develop a Dimensional Model (This has been done)
+
+**Step 2**: Prototype Using Seed Data. 
+
+Since real data is not yet available, you are asked to generate synthetic data. You can use Python’s **Faker library** or a GenAI tool to generate this data. The generated data will serve as seeds for your dbt project.
+
+**Step 3**: Implement dbt Models
+* __Sources__: Create source models for the raw data tables, ensuring you define freshness
 tests for your sources.
 
-● Staging Models: Implement staging models that map 1:1 with the source tables and
+* __Staging Models__: Implement staging models that map 1:1 with the source tables and
 apply only light transformations (e.g., renaming columns, casting data types).
 
-● Intermediate Models (Optional): If needed, create intermediate models to further refine
+* __Intermediate Models (Optional)__: If needed, create intermediate models to further refine
 the data before feeding it into the final models.
 
-● Dimensional Models: Build dimension and fact models based on your business
+* __Dimensional Models__: Build dimension and fact models based on your business
 process.
 
-Step 4: Add Tests and Documentation
-● Add generic and custom tests (e.g., uniqueness, non-null constraints, accepted values) to your models to ensure data quality.
+**Step 4**: Add Tests and Documentation
+* Add generic and custom tests (e.g., uniqueness, non-null constraints, accepted values) to your models to ensure data quality.
 
-● Document each of your models.
+* Document each of your models.
 
-Step 5: Automate User Access Requests
+**Step 5**: Automate User Access Requests
 Currently, a user (joseph) needs access to new tables/models after they are created. He
 manually contacts the team for access. How can access be given to this user after each dbt
 execution?
 
-Note: You can use dbt core or dbt cloud
+***Note***: You can use dbt core or dbt cloud
+
+## Solution to the Assignment
+After a couple of meeting with the business stakeholders, we reviwed the entire data modelling process and made certain adjustments based on the conceptual and physical data model.
+
+The reviews helped to to understand better how the tables better connect to form a dimensional model.
+
+### New Conceptual Model
+phy
+
+### New Physical Model
+
+With the insights from the data modeling and the data warehouse architecture design, we go ahead to create the three layers (datasets) in Bigquery using **dbt**. These (staging, warehouse, and analytics_obt or reporting) layers are identified by the **"dbt prefix"**.
 
 
-# About DBT
-Welcome to your new dbt project!
-
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
 
 
-### Resources:
+### Resources on Getting Started with DBT:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
