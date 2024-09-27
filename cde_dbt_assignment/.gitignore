@@ -3,3 +3,6 @@ target/
 dbt_packages/
 ../logs/
 ../dbt-env/
+/../.ipynb_checkpoints/
+/../dbt-env/
+/../logs/
